@@ -1,0 +1,83 @@
+.round-help{
+    min-width: 255px;
+    min-height: 20%;
+   
+    background-color: black;
+}
+
+.header-title{
+  font-family: serif !important;
+  font-size: 60px;
+}
+
+.space{
+    height: 500px !important;
+    margin-top: 5%;  
+}
+.home-image{
+    height: 400px;
+    width: 50%;
+}
+.profile{
+    height: 70% !important;
+    float:right  !important;
+    margin-top: 6% !important;
+}
+.skill-bar {
+    padding: 80px 10px 0px 10px;
+  }
+
+  .skill-bar {
+    padding: 80px 10px 0px 10px;
+  }  
+.progress {
+    height: 5px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: visible;
+    position: relative;
+    margin: 0 0 35px 0;
+    border-radius: 3px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #e1a34c;
+    border-radius: 3px;
+    transition: all 3s ease-in-out;
+  }
+  
+  .progress-bar .percent-text {
+    font-size: 62px;
+    color: #fff;
+    position: absolute;
+    top: -110px;
+    left: 0;
+  }
+
+@media (max-width: 480px) {
+  .progress-bar .percent-text {
+    font-size: 39px;
+    top: -70px;
+  }
+  .skill-bar {
+    padding: 32px 10px 0px 10px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+.progress-bar .percent-text {
+    font-size: 39px;
+    top: -70px;
+  }
+  .skill-bar {
+    padding: 32px 10px 0px 10px;
+  }
+}
