@@ -1,9 +1,12 @@
 import React from 'react'
 import "../App.css"
 import "../style.css"
+import github from '../images/github.ico';
+import twitter from '../images/twitter.ico';
+import facebook from '../images/facebook.ico';
+import linkedin from '../images/linkedin.ico';
+import instagram from '../images/instagram.ico';
 import emailjs from 'emailjs-com';
-import linkin from '../images/linkin.png'
-import github from '../images/github.png'
 export default function Contact() {
     function sendEmail(e) {
         e.preventDefault();
@@ -21,20 +24,32 @@ export default function Contact() {
             <div className="container rounded-lg mt-4 pt-4 pt-5 ">
                 <div className="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-title text-light text-capitalize">Contact Information</h2>
+                    <h2 class="section-title header-title text-light text-capitalize">Contact Information</h2>
                 </div>
-    
-                <div  className=" col-12 justify-content-center d-inline-flex ">
-                    <a  className="ti-facebook">fb</a> 
-                    <a  className=" nav-link"><img className="col-12 col-lg-6 icon" src={github}/></a>  
-                    <a className=" nav-link">Instagram</a> 
-                    <a className=" nav-link">Twitter</a> 
+                <div className="text-capitalize d-inline-flex justify-content-center align-items-center text-light my-2 ">
+                        <div>
+                           <a  target="_blank" href="https://github.com/mainalawrence"><img src={github} alt="github"/></a>
+                        </div>   
+                        <div>
+                            <a  target="_blank" href="https://www.linkedin.com/in/lawrence-maina-295295202/"><img src={linkedin} alt="linkedin"/></a>
+                        </div>     
+                       <div>
+                            <a  target="_blank" href="https://twitter.com/Lawrenc98672279"><img src={twitter} alt="twitter"/></a>
+                        </div>
+                        <div>
+                            <a  target="_blank" href="https://www.facebook.com/lawrence.maina.58958/"><img src={facebook} alt="facebook"/></a>
+                        </div>
+                       
+                        <div>
+                            <a  target="_blank" href="https://www.instagram.com/mainalawrence32/"><img src={instagram} alt="instagram1"/></a>
+                        </div>
                 </div>
-                <div className="col-lg-8 mx-auto">
-                    <div className="bg-white rounded text-center p-5 shadow-down">
+   
+                <div className="col-lg-6 mx-auto">
+                    <div className="bg-white rounded text-center p-5 ">
                     <h4 className="mb-80">Contact Form</h4>
                     <form onSubmit={sendEmail} className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6 text-dark">
                         <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4"/>
                         </div>
                         <div claclassNamess="col-md-6">
@@ -43,25 +58,26 @@ export default function Contact() {
                         <div className="col-12">
                         <textarea name="message" id="message" className="form-control px-0 mb-4"
                             placeholder="Type Message Here"></textarea>
-                        </div>/
+                        </div>
                         <div className="col-lg-6 col-10 mx-auto">
-                        <button className="btn btn-primary w-100">send</button>
+                        <button className="btn btn-dark  w-100">send</button>
                         </div>
                     </form>
                     </div>
                 </div>
                 </div>
             
-            <div className=" container m-5 pb-lg-5 col-lg-12 mt-4">
-               <div className="row">
-                    <div className="col-md-4">
-                        <h5 className="text-light">Email</h5>
-                        <p className="text-white paragraph-lg font-secondary">mainalawrence32@gmail.com</p>
+            <div className=" container my-3 ">
+               <div className="row d-flex justify-content-center">
+                    <div className="col-md-5  mr-3 align-items-end">
+                        <p className="text-light">Email</p>
+                        <p className="text-white">mainalawrence32@gmail.com</p>
                     </div>
-                    <div className="col-md-4">
-                        <h5 className="text-light">Phone</h5>
-                        <p className="text-white paragraph-lg font-secondary">+254 740 938 029</p>
+                    <div className="col-md-5">
+                        <p className="text-light">Phone</p>
+                        <p className="text-white  ">+254 740 938 029</p>
                     </div>
+                    
                     
                     </div>
             </div>

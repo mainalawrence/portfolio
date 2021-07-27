@@ -1,3 +1,4 @@
+
 .round-help{
     min-width: 255px;
     min-height: 20%;
@@ -8,6 +9,16 @@
 .header-title{
   font-family: serif !important;
   font-size: 60px;
+}
+
+.service-title{
+  font-family: serif !important;
+  font-size: 30px;
+}
+
+.body-title{
+  font-family:sans-serif !important;
+ 
 }
 
 .space{
@@ -80,4 +91,37 @@
   .skill-bar {
     padding: 32px 10px 0px 10px;
   }
+}
+
+
+.database{
+  
+  background-image: url("../src/images/database.png");
+}
+.mobile{
+  background-image: url("../src/images/mobile.jpg");
+}
+.webdev{
+  background-image: url("../src/images/webdeign.jpg");
+}
+.design{
+  background-image: url("../src/images/webdeign.jpg");
+}
+.software{
+  background-image: url("../src/images/software.jpg");
+}
+.games{
+  background-image: url("../src/images/game.jpg");
+  
+}
+
+.sociial-icon-div{
+  height: 60%;
+  width: 60;
+   border-radius:50% ;
+}
+.social-meidia-icon{
+  height: 100%;
+  width: 100%;
+  
 }
